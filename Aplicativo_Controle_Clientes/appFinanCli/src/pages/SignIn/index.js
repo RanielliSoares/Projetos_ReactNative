@@ -7,6 +7,7 @@ import {
     Input,
     TextBtn,
     TextCad,
+    Logo
 
 } from '../styles/stylesLogin'
 
@@ -23,6 +24,9 @@ export default function Signin() {
 
     return (
         <Container>
+            <Logo
+            source={require('../../img/Logo1.png')}
+            />
             <Input
                 placeholder="Email"
             />

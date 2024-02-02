@@ -44,5 +44,7 @@ color: #FFF;
 `;
 
 export const Logo = styled.Image`
-
+ width: 250px;
+ height: 250px;
+ margin-bottom: 20px;
 `;
