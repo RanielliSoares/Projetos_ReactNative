@@ -1,10 +1,22 @@
-import React from "react";
-import { Text, View } from 'react-native';
+import React,{useState, useContext} from "react";
+
+import {
+    Container,
+    Header,
+    ViewHeader,
+
+} from '../styles/stylesHome';
+
+import { AuthContext } from "../../contexts/auth";
 
 export default function Home() {
+    const { user } = useContext(AuthContext);
+
     return (
-        <View>
-            <Text>Tela Home</Text>
-        </View>
+        <Container>
+            <ViewHeader>
+                <Header>Olá {user}</Header>
+            </ViewHeader>
+        </Container>
     );
 }
