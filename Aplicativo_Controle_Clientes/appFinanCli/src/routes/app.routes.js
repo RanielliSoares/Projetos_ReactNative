@@ -8,6 +8,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import Home from "../pages/Home";
 import Clientes from "../pages/Clientes";
 import Faturamento from "../pages/Faturamento";
+import Produtos from "../pages/Produtos";
 
 const Tab = createBottomTabNavigator();
 
@@ -42,6 +43,16 @@ function AppRoutes() {
                     tabBarIcon: () => {
                         return <FontAwesome name="address-book" size={24} color="#aa1963" />
 
+                    }
+                }}
+            />
+            <Tab.Screen
+                name="Produtos"
+                component={Produtos}
+                options={{
+                    tabBarLabel: 'Produtos',
+                    tabBarIcon: () => {
+                        return <Entypo name="box" size={32} color={'#aa1963'} />
                     }
                 }}
             />
