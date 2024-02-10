@@ -16,7 +16,10 @@ export default function Home() {
         <Container>
             <ViewHeader>
                 <Header>Olá {user}</Header>
+                
             </ViewHeader>
+
+            <Header>Esta tela será a Home do nosso projeto</Header>
         </Container>
     );
 }
